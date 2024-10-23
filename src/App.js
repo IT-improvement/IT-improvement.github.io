@@ -1,10 +1,11 @@
 import './App.css';
-
+import { RouterProvider } from 'react-router-dom';
+import Router from './Router';
 function App() {
   return (
-    <div className="App">
-      <h1>git-page</h1>
-    </div>
+    <>
+    <RouterProvider router={Router}/>
+    </>
   );
 }
 

@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0,0.6);
+    align-items: center;
+    justify-content: center;
+}
+.main-content{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    column-gap: 7vw;
+    grid-template-areas: 
+    "main main"
+    "profile box";
+}
+.main-title-box{
+    grid-area: main;
+
+    font-family: MaplestoryOTFBold;
+    color: rgb(247, 244, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-title-box>div{
+    font-size: 50px;
+    width: 400px;
+    height: 50px;
+    /* animation: scaleXAnimation 2s infinite; */
+}
+.main-profile{
+    background-color: rgba(255,255,255,0.5);
+    grid-area: profile;
+}
+.main-box{
+    grid-area: box;
+   
+    gap: 10px;
+}
+.box{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    gap:5%;
+}
+.content{
+    width: 30%;
+    height: 100%;
+}
+.content.show{
+}
+.preview-image{
+    width: 100%;
+    height: 80%;
+
+    background-size: 100% 80%; /* Adjust the image size to fit the div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.preview-image.bringup{
+    background-image: url('../../image/bringup.png'); /* Ensure this is the correct relative path */
+}
+.preview-image.geohub{
+    background-image: url('../../image/geohub.png'); /* Ensure this is the correct relative path */
+}
+.content-info {
+    font-family: MaplestoryOTFBold;
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+    position: relative; /* Allows positioning of the central item */
+}
+
+.content-title {
+    position: absolute; /* Absolute positioning for centering */
+    left: 50%; /* Move it 50% from the left */
+    transform: translateX(-50%); /* Center the text horizontally */
+}
+
+.content-explanation {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    font-size: 17px;
+    align-self: center;
+    text-align: center;
+}
