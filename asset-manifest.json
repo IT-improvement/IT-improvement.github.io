@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.b6693680.css",
+    "main.css": "/static/css/main.5151f910.css",
     "main.js": "/static/js/main.72b142d3.js",
     "static/media/geohub.png": "/static/media/geohub.d990e18f09170f764879.png",
     "index.html": "/index.html",
-    "main.b6693680.css.map": "/static/css/main.b6693680.css.map",
+    "main.5151f910.css.map": "/static/css/main.5151f910.css.map",
     "main.72b142d3.js.map": "/static/js/main.72b142d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6693680.css",
+    "static/css/main.5151f910.css",
     "static/js/main.72b142d3.js"
   ]
 }
